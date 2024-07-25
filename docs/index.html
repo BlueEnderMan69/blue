@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Messaging System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .message {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .user {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Forum Messaging System</h1>
+        
+        <div class="message">
+            <p><span class="user">User1:</span> Hi, everyone!</p>
+        </div>
+        
+        <div class="message">
+            <p><span class="user">User2:</span> Hello there!</p>
+        </div>
 
+        <!-- Add a form for users to submit messages -->
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
